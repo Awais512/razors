@@ -3,7 +3,7 @@
   export let location;
   //global store
 
-  import products from "../stores/defaultProduct";
+  import products from "../stores/products";
   import Loading from "../components/Loading.svelte";
   import { link } from "svelte-routing";
   import globalStore from "../stores/globalStore";
