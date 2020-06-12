@@ -1,6 +1,7 @@
 <script>
   import loginUser from "../strapi/loginUser";
   import registerUser from "../strapi/registerUser";
+  import { navigate } from "svelte-routing";
 
   let email = "";
   let password = "";
@@ -26,7 +27,8 @@
     }
 
     if (user) {
-    } else {
+      navigate("/products");
+      return;
     }
   }
 </script>
